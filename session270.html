@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<style>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .left{
+            background-color:#2196f3;;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+        .main{
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%;
+        }
+        .right{
+            background-color: #045d04;
+            padding: 20px;
+            float: left;
+            width: 20%;
+
+        }
+        @media screen and (max-width:800px){
+            .left,.main,.right{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>media queries</h2>
+    <p>akanksha resize the browser window</p>
+    <p>make sure you reach the breakpoint at 800px when resizing 
+        this frame
+    </p>
+    <div class="left"><p>left menu</p></div>
+    <div class="main"><p>main content</p></div>
+    <div class="right"><p>right content</p></div>
+    
+</body>
+</html>

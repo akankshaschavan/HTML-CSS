@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html layout</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*style the header */
+        header{
+            background-color: #666;
+            padding: 30px;
+            text-align:center;
+            font-size:35px;
+            color:white;
+        }
+        
+        /*create two cloumns/boxes that floats next to each other*/
+        nav{
+            float:left;
+            width: 30px;
+            height:300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+    /*style the list inside menu*/
+    nav ul{
+        list-style-type: none;
+        padding:20px;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px;
+    }
+    /*clear floats after the column*/
+    section::after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+/* style the footer*/
+footer{
+    background-color:#777;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+
+/*responsive layout= makes two columns on top of each other instead of next to eaxh other on small screen*/
+@media (max-width:600px){
+    nav,article{
+        width:100%;
+        height:auto;
+    }
+}
+</style>
+</head>
+<body>
+    <h2>CSS layout float</h2>
+
+    <header>
+        <h2>Cities</h2>
+
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">India</a></li>
+                <li><a href="#">U.S</a></li>
+                <li><a href="#">Paris</a></li>
+            </ul>ss
+        </nav>
+        <article>
+        <h1>aknksha</h1>
+        <P>akanksha is a FSDT&T in I/C sectors</P>
+        </article>
+    </section>
+    <footer>
+        <P>Footer</P>
+    </footer>
+</body>
+</html>
+<!--header : defines top section of web page-->
+<!--section tag : grouping of related content togethet under a specific theme-->
+<!--nav tag:reprents block of navigation links-->
+<!--footer tag:bottom of the web page-->

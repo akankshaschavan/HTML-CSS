@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--HTMl image map = allows image to be clickable-->
+    <h2>image maps</h2>
+    <p>click on the computer ,phone or cup of coffe to go a new page</p>
+    <img src="image.jpg"alt="workplace"usemap="#workmap"width="400"height="379">
+    <map name="workmap">
+        <area shape="rect"coords="34,44,270,350"alt="computer"href="computer.jpg">
+        <area shape="rect"coords="290,172,333,250"alt="phone"href="phone.png">
+        <area shape="circle"coords="337,300,44"alt="coffe"href="cofee.jpg">
+        <!--usemap =links the image to map element-->
+        <!--area =defines clickable image-->
+
+    </map>
+</body>
+</html>

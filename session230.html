@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="akan.js"></script>
+</head>
+<body>
+    <!--HTML+Javascript-adding interactivity to web pages-->
+    <!--javascript is powerful scripting languuage that can be used with html to make pages dynamic and interacrive-->
+    <h1>My first javascript programm</h1>
+    <button type="button"
+    onclick="document.getElementById('akanksha').innerHTML=Date()">
+    click me to show current date and time.
+</button>
+<p id="akanksha"></p>
+
+<!--script= element is used to add javascript  to your HTML, contain javascript code directly-->
+<h2>Inline javascript</h2>
+<button type="button"
+onclick="document.getElementById('aka').innerHTML=Date()">
+My office time is</button>
+<p id="aka"></p>
+
+<!--internal javascript-->
+<h2>Internal javascript</h2>
+<button type="button"
+onclick="document.getElementById('myc').innerHTML=myName()">My name is</button>
+<p id="myc"></p>
+<script>
+    function myName(){
+        return "akanksha s chavan";
+
+    }
+</script>
+
+<!--external javascript-->
+<h2>external java script</h2>
+<h3 id="akan"style="color:red;">My name is</h3>
+<button type="button"onclick="myName()">
+    click here
+</button>
+
+</body>
+</html>
